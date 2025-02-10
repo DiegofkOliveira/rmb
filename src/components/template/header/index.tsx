@@ -2,10 +2,10 @@ import { Facebook, Instagram } from 'lucide-react';
 
 export function Header() {
     return (
-        <header className='w-full h-[200px] bg-fundo bg-no-repeat bg-cover bg-bottom h-96 flex items-start justify-center md:h-[500px] lg:h-[800px]'>
+        <header className='w-full h-auto h-96 flex flex-col items-start justify-center'>
             <div className='w-full h-16 bg-orange-500 roudend-lg flex items-center justify-evenly md:h-28'>
                 <div>
-                    <img className="w-[60px] h-[40px] md:w-[100px] md:h-[60px] lg:w-[120px] lg:h-[80px]" src="/Logo.png" alt="Logo da empresa" />
+                    <img className="w-[60px] md:w-[100px] lg:w-[120px]" src="/Logo.png" alt="Logo da empresa" />
                 </div>
                 <div className='flex gap-6 py-6'>
                     <div className='group border border-white rounded-full text-white cursor-pointer hover:bg-yellow-950 hover:border-yellow-950 hover:text-orange-500 hover:transition duration-300'>
@@ -16,6 +16,7 @@ export function Header() {
                     </div>
                 </div>
             </div>
+            <img src="/rmbVeiculo.png" alt="Imagem Principal" />
         </header>
     )
 }
